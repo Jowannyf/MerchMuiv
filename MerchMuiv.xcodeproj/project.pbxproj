@@ -13,6 +13,12 @@
 		34DAE95928259D7B00354B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DAE95728259D7B00354B53 /* Main.storyboard */; };
 		34DAE95B28259D7D00354B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DAE95A28259D7D00354B53 /* Assets.xcassets */; };
 		34DAE95E28259D7D00354B53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DAE95C28259D7D00354B53 /* LaunchScreen.storyboard */; };
+		34DAE9692825A35400354B53 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 34DAE9682825A35400354B53 /* FirebaseAnalytics */; };
+		34DAE96B2825A35400354B53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 34DAE96A2825A35400354B53 /* FirebaseAuth */; };
+		34DAE96D2825A35400354B53 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 34DAE96C2825A35400354B53 /* FirebaseDatabase */; };
+		34E33D672825B5FD0043FF80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34E33D662825B5FD0043FF80 /* GoogleService-Info.plist */; };
+		34E33D702825EB820043FF80 /* AboutProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E33D6F2825EB820043FF80 /* AboutProjectViewController.swift */; };
+		34E33D72282678070043FF80 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E33D71282678070043FF80 /* CatalogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,9 @@
 		34DAE95A28259D7D00354B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34DAE95D28259D7D00354B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34DAE95F28259D7D00354B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E33D662825B5FD0043FF80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34E33D6F2825EB820043FF80 /* AboutProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectViewController.swift; sourceTree = "<group>"; };
+		34E33D71282678070043FF80 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34DAE96D2825A35400354B53 /* FirebaseDatabase in Frameworks */,
+				34DAE9692825A35400354B53 /* FirebaseAnalytics in Frameworks */,
+				34DAE96B2825A35400354B53 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,50 @@
 		34DAE95028259D7B00354B53 /* MerchMuiv */ = {
 			isa = PBXGroup;
 			children = (
-				34DAE95128259D7B00354B53 /* AppDelegate.swift */,
-				34DAE95328259D7B00354B53 /* SceneDelegate.swift */,
-				34DAE95528259D7B00354B53 /* ViewController.swift */,
-				34DAE95728259D7B00354B53 /* Main.storyboard */,
-				34DAE95A28259D7D00354B53 /* Assets.xcassets */,
-				34DAE95C28259D7D00354B53 /* LaunchScreen.storyboard */,
+				34E33D662825B5FD0043FF80 /* GoogleService-Info.plist */,
 				34DAE95F28259D7D00354B53 /* Info.plist */,
+				34E33D73282699A50043FF80 /* Models */,
+				34E33D6C2825BB990043FF80 /* Views */,
+				34E33D6B2825BB800043FF80 /* Controllers */,
+				34E33D682825BB210043FF80 /* Resources */,
 			);
 			path = MerchMuiv;
+			sourceTree = "<group>";
+		};
+		34E33D682825BB210043FF80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34DAE95128259D7B00354B53 /* AppDelegate.swift */,
+				34DAE95328259D7B00354B53 /* SceneDelegate.swift */,
+				34DAE95A28259D7D00354B53 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		34E33D6B2825BB800043FF80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34DAE95528259D7B00354B53 /* ViewController.swift */,
+				34E33D6F2825EB820043FF80 /* AboutProjectViewController.swift */,
+				34E33D71282678070043FF80 /* CatalogViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		34E33D6C2825BB990043FF80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34DAE95C28259D7D00354B53 /* LaunchScreen.storyboard */,
+				34DAE95728259D7B00354B53 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34E33D73282699A50043FF80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,11 @@
 			dependencies = (
 			);
 			name = MerchMuiv;
+			packageProductDependencies = (
+				34DAE9682825A35400354B53 /* FirebaseAnalytics */,
+				34DAE96A2825A35400354B53 /* FirebaseAuth */,
+				34DAE96C2825A35400354B53 /* FirebaseDatabase */,
+			);
 			productName = MerchMuiv;
 			productReference = 34DAE94E28259D7B00354B53 /* MerchMuiv.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +163,9 @@
 				Base,
 			);
 			mainGroup = 34DAE94528259D7B00354B53;
+			packageReferences = (
+				34DAE9672825A35400354B53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 34DAE94F28259D7B00354B53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34DAE95E28259D7D00354B53 /* LaunchScreen.storyboard in Resources */,
+				34E33D672825B5FD0043FF80 /* GoogleService-Info.plist in Resources */,
 				34DAE95B28259D7D00354B53 /* Assets.xcassets in Resources */,
 				34DAE95928259D7B00354B53 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E33D72282678070043FF80 /* CatalogViewController.swift in Sources */,
+				34E33D702825EB820043FF80 /* AboutProjectViewController.swift in Sources */,
 				34DAE95628259D7B00354B53 /* ViewController.swift in Sources */,
 				34DAE95228259D7B00354B53 /* AppDelegate.swift in Sources */,
 				34DAE95428259D7B00354B53 /* SceneDelegate.swift in Sources */,
@@ -305,7 +363,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +416,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34DAE9672825A35400354B53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34DAE9682825A35400354B53 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34DAE9672825A35400354B53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		34DAE96A2825A35400354B53 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34DAE9672825A35400354B53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		34DAE96C2825A35400354B53 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34DAE9672825A35400354B53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34DAE94628259D7B00354B53 /* Project object */;
 }
