@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MerchMuiv" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="MerchMuiv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="fht-rc-T6m">
-                                <rect key="frame" x="40" y="283.66666666666669" width="348" height="359.00000000000006"/>
+                                <rect key="frame" x="40" y="279.66666666666663" width="348" height="366.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пользователя не существует" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSC-na-6dB">
                                         <rect key="frame" x="58.666666666666686" y="0.0" width="231" height="20.333333333333332"/>
@@ -42,25 +42,25 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="D5s-nQ-plp">
-                                        <rect key="frame" x="58" y="248.33333333333329" width="232" height="110.66666666666666"/>
+                                        <rect key="frame" x="26" y="248.33333333333334" width="296.33333333333331" height="118.33333333333334"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxo-eu-omv">
-                                                <rect key="frame" x="68" y="0.0" width="96" height="45.333333333333336"/>
+                                                <rect key="frame" x="95.333333333333343" y="0.0" width="105.66666666666666" height="46.666666666666664"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Войти">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Qu-ss-C6a"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRu-N7-7jr">
-                                                <rect key="frame" x="0.0" y="70.333333333333371" width="232" height="40.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="71.666666666666629" width="296.33333333333331" height="46.666666666666657"/>
                                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="regButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BMi-7p-rpC"/>
@@ -79,8 +79,8 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MerchMuiv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv3-EO-vrD">
-                                <rect key="frame" x="132" y="154" width="164" height="33.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <rect key="frame" x="132" y="154" width="164" height="32.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -98,6 +98,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="LoginButton" destination="dxo-eu-omv" id="JzY-ee-6XN"/>
                         <outlet property="emailTextfield" destination="cZ8-FB-SzM" id="tOk-9C-Hpo"/>
                         <outlet property="passwordTextField" destination="r6B-vK-DnO" id="fo5-AO-yWd"/>
                         <outlet property="warnLabel" destination="gSC-na-6dB" id="A2s-9J-OcZ"/>
@@ -117,12 +118,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKw-f1-nIK">
-                                <rect key="frame" x="89" y="717" width="250" height="50.666666666666629"/>
+                                <rect key="frame" x="89" y="597" width="250" height="46.666666666666629"/>
                                 <color key="backgroundColor" red="0.98768121004104614" green="0.0" blue="0.039205938577651978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Оформить заказ">
-                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -134,7 +135,7 @@
                         <viewLayoutGuide key="safeArea" id="58S-3G-ucL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XKw-f1-nIK" firstAttribute="top" secondItem="58S-3G-ucL" secondAttribute="top" constant="717" id="i8D-0M-RJP"/>
+                            <constraint firstItem="58S-3G-ucL" firstAttribute="bottom" secondItem="XKw-f1-nIK" secondAttribute="bottom" constant="145.33333333333337" id="W2a-bC-Zif"/>
                             <constraint firstItem="XKw-f1-nIK" firstAttribute="leading" secondItem="58S-3G-ucL" secondAttribute="leading" constant="89" id="uy8-sZ-gTr"/>
                             <constraint firstItem="58S-3G-ucL" firstAttribute="trailing" secondItem="XKw-f1-nIK" secondAttribute="trailing" constant="89" id="wNd-eW-DDN"/>
                         </constraints>
@@ -153,28 +154,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELO-ZJ-8yy">
-                                <rect key="frame" x="80" y="557" width="268" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AboutProject" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-8x-HbT">
+                                <rect key="frame" x="40" y="190" width="348" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELO-ZJ-8yy">
+                                <rect key="frame" x="80" y="666" width="268" height="39"/>
                                 <color key="backgroundColor" red="0.98768872022628784" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Выйти из приложения" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="singOutPressed:" destination="O9O-Ex-sCs" eventType="touchUpInside" id="97C-pS-TiF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AboutProject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-8x-HbT">
-                                <rect key="frame" x="40" y="190" width="348" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Myh-kg-t0x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Myh-kg-t0x" firstAttribute="bottom" secondItem="ELO-ZJ-8yy" secondAttribute="bottom" constant="194" id="7ve-CC-Qgb"/>
+                            <constraint firstItem="Myh-kg-t0x" firstAttribute="bottom" secondItem="ELO-ZJ-8yy" secondAttribute="bottom" constant="89" id="7ve-CC-Qgb"/>
                             <constraint firstItem="Myh-kg-t0x" firstAttribute="trailing" secondItem="ELO-ZJ-8yy" secondAttribute="trailing" constant="80" id="9wh-8U-hZh"/>
                             <constraint firstItem="Nfe-8x-HbT" firstAttribute="top" secondItem="Myh-kg-t0x" secondAttribute="top" constant="146" id="FGQ-km-rTg"/>
                             <constraint firstItem="Nfe-8x-HbT" firstAttribute="centerX" secondItem="D2K-Rc-j8i" secondAttribute="centerX" id="My3-rR-TRw"/>
@@ -185,6 +187,10 @@
                     <tabBarItem key="tabBarItem" title="О проекте" image="book.fill" catalog="system" id="uCd-H8-IQk"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="AboutProjectLabel" destination="Nfe-8x-HbT" id="fEo-eU-FPQ"/>
+                        <outlet property="SignOutButton" destination="ELO-ZJ-8yy" id="IIN-wD-d72"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6G-yF-65A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -221,12 +227,12 @@
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кофты" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wV-eL-w6h">
                                                             <rect key="frame" x="80" y="10" width="298" height="58"/>
-                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
+                                                            <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" systemColor="systemRedColor"/>
                                                     <constraints>
                                                         <constraint firstItem="7wV-eL-w6h" firstAttribute="top" secondItem="YXO-aJ-ETR" secondAttribute="top" constant="10" id="0aj-9z-Av8"/>
                                                         <constraint firstItem="BqQ-pZ-dRX" firstAttribute="top" secondItem="YXO-aJ-ETR" secondAttribute="top" constant="16" id="2pB-1G-JfF"/>
@@ -364,17 +370,23 @@
     <resources>
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
-        <image name="cart.fill" catalog="system" width="32" height="32"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="square.stack.3d.down.right.fill" catalog="system" width="124" height="128"/>
         <image name="tshirt" catalog="system" width="128" height="99"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

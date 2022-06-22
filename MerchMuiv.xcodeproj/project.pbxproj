@@ -10,7 +10,7 @@
 		34D88529282DD0960041CFD0 /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D88528282DD0960041CFD0 /* CatalogTableViewCell.swift */; };
 		34DAE95228259D7B00354B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95128259D7B00354B53 /* AppDelegate.swift */; };
 		34DAE95428259D7B00354B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95328259D7B00354B53 /* SceneDelegate.swift */; };
-		34DAE95628259D7B00354B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95528259D7B00354B53 /* ViewController.swift */; };
+		34DAE95628259D7B00354B53 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95528259D7B00354B53 /* SignInViewController.swift */; };
 		34DAE95928259D7B00354B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DAE95728259D7B00354B53 /* Main.storyboard */; };
 		34DAE95B28259D7D00354B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DAE95A28259D7D00354B53 /* Assets.xcassets */; };
 		34DAE95E28259D7D00354B53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DAE95C28259D7D00354B53 /* LaunchScreen.storyboard */; };
@@ -27,7 +27,7 @@
 		34DAE94E28259D7B00354B53 /* MerchMuiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerchMuiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DAE95128259D7B00354B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34DAE95328259D7B00354B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		34DAE95528259D7B00354B53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34DAE95528259D7B00354B53 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		34DAE95828259D7B00354B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34DAE95A28259D7D00354B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34DAE95D28259D7D00354B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		34E33D6B2825BB800043FF80 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				34DAE95528259D7B00354B53 /* ViewController.swift */,
+				34DAE95528259D7B00354B53 /* SignInViewController.swift */,
 				34E33D6F2825EB820043FF80 /* AboutProjectViewController.swift */,
 				34D88528282DD0960041CFD0 /* CatalogTableViewCell.swift */,
 				34E33D71282678070043FF80 /* CatalogViewController.swift */,
@@ -200,7 +200,7 @@
 			files = (
 				34E33D72282678070043FF80 /* CatalogViewController.swift in Sources */,
 				34E33D702825EB820043FF80 /* AboutProjectViewController.swift in Sources */,
-				34DAE95628259D7B00354B53 /* ViewController.swift in Sources */,
+				34DAE95628259D7B00354B53 /* SignInViewController.swift in Sources */,
 				34D88529282DD0960041CFD0 /* CatalogTableViewCell.swift in Sources */,
 				34DAE95228259D7B00354B53 /* AppDelegate.swift in Sources */,
 				34DAE95428259D7B00354B53 /* SceneDelegate.swift in Sources */,
@@ -352,6 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WT58NGW9J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MerchMuiv/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -359,6 +360,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +381,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WT58NGW9J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MerchMuiv/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -386,6 +389,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

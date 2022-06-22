@@ -10,8 +10,14 @@ import Firebase
 
 class AboutProjectViewController: UIViewController {
 
+    @IBOutlet var SignOutButton: UIButton!
+    @IBOutlet var AboutProjectLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        SignOutButton.layer.cornerRadius = SignOutButton.frame.height / 2
+        
+        AboutProjectLabel.text = "Проект подготовил выпускник Московского Университета имени С.Ю.Витте Жуков Иван"
     }
 
     @IBAction func singOutPressed(_ sender: UIButton) {
@@ -23,4 +29,4 @@ class AboutProjectViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 }
-// выход из приложения
+// Выход из приложения

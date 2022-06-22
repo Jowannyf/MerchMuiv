@@ -8,12 +8,13 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
+class SignInViewController: UIViewController {
     
     let segueIdentifier = "LogSegue"
     
     @IBOutlet var warnLabel: UILabel!
     
+    @IBOutlet var LoginButton: UIButton!
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
@@ -23,6 +24,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextfield.delegate = self
+        passwordTextField.delegate = self
+        
         view.addVertGrad(topColor: primaryColor, bottomColor: secondaryColor)
         warnLabel.alpha = 0
         Auth.auth().addStateDidChangeListener({ [weak self] (auth, user) in
@@ -99,3 +103,14 @@ extension UIView {
     }
 }
 // Расширение на кастомный фон
+extension SignInViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTextfield {
+            passwordTextField.becomeFirstResponder()
+        } else {
+            loginButtonPressed(LoginButton)
+        }
+        return true
+    }
+}
+// Расширение на работу с клавиатурой 

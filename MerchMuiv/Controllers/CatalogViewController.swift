@@ -21,6 +21,7 @@ class CatalogViewController: UIViewController {
         CatalogTableView.showsVerticalScrollIndicator = false
     }
 }
+
 extension CatalogViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -37,8 +38,10 @@ extension CatalogViewController: UITableViewDataSource, UITableViewDelegate {
         cell.CatalogImgView.layer.cornerRadius = cell.CatalogImgView.frame.height / 2
         return cell
     }
+// Округление ячеек
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return category.count
     }
 }
+// Расширение для работы с ячейками
