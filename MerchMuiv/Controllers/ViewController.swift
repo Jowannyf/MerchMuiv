@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         emailTextfield.text = ""
         passwordTextField.text = ""
     }
-// очищение полей после выхода
+// Очищение полей после выхода
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
         view.endEditing(true)
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             self?.warnLabel.alpha = 0
         }
     }
-// анимация алерта
+// Анимация алерта
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         guard let email = emailTextfield.text, let password = passwordTextField.text, email != "", password != "" else {
             displayWarning(WithText: "Данные не корректны")
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
             self?.displayWarning(WithText: "Такого пользователя нет")
         })
     }
-// авторизация пользователя
+// Авторизация пользователя
         @IBAction func regButtonPressed(_ sender: UIButton) {
             guard let email = emailTextfield.text, let password = passwordTextField.text, email != "", password != "" else {
                 displayWarning(WithText: "Данные не корректны")
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
                 })
             }
     }
-// регистрация пользователя
+// Регистрация пользователя
 extension UIView {
     func addVertGrad(topColor: UIColor, bottomColor: UIColor) {
         let gradient = CAGradientLayer()
@@ -98,4 +98,4 @@ extension UIView {
         layer.insertSublayer(gradient, at: 0)
     }
 }
-// расширение на кастомный фон
+// Расширение на кастомный фон

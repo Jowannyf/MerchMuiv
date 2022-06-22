@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34D88529282DD0960041CFD0 /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D88528282DD0960041CFD0 /* CatalogTableViewCell.swift */; };
 		34DAE95228259D7B00354B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95128259D7B00354B53 /* AppDelegate.swift */; };
 		34DAE95428259D7B00354B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95328259D7B00354B53 /* SceneDelegate.swift */; };
 		34DAE95628259D7B00354B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95528259D7B00354B53 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34D88528282DD0960041CFD0 /* CatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewCell.swift; sourceTree = "<group>"; };
 		34DAE94E28259D7B00354B53 /* MerchMuiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerchMuiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DAE95128259D7B00354B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34DAE95328259D7B00354B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				34DAE94F28259D7B00354B53 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		34DAE94F28259D7B00354B53 /* Products */ = {
 			isa = PBXGroup;
@@ -93,6 +96,7 @@
 			children = (
 				34DAE95528259D7B00354B53 /* ViewController.swift */,
 				34E33D6F2825EB820043FF80 /* AboutProjectViewController.swift */,
+				34D88528282DD0960041CFD0 /* CatalogTableViewCell.swift */,
 				34E33D71282678070043FF80 /* CatalogViewController.swift */,
 			);
 			path = Controllers;
@@ -197,6 +201,7 @@
 				34E33D72282678070043FF80 /* CatalogViewController.swift in Sources */,
 				34E33D702825EB820043FF80 /* AboutProjectViewController.swift in Sources */,
 				34DAE95628259D7B00354B53 /* ViewController.swift in Sources */,
+				34D88529282DD0960041CFD0 /* CatalogTableViewCell.swift in Sources */,
 				34DAE95228259D7B00354B53 /* AppDelegate.swift in Sources */,
 				34DAE95428259D7B00354B53 /* SceneDelegate.swift in Sources */,
 			);
