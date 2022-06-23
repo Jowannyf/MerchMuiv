@@ -25,14 +25,15 @@ class CatalogViewController: UIViewController {
 extension CatalogViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 150
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = CatalogTableView.dequeueReusableCell(withIdentifier: "catalogCell") as! CatalogTableViewCell
         let catalog = category[indexPath.row]
-        
+
         cell.CatalogLbl.text = catalog
+        cell.CatalogImgView.image = UIImage(named: catalog)
         
         cell.CatalogView.layer.cornerRadius = cell.CatalogView.frame.height / 2
         cell.CatalogImgView.layer.cornerRadius = cell.CatalogImgView.frame.height / 2

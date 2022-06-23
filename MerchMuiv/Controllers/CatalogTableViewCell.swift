@@ -13,6 +13,7 @@ class CatalogTableViewCell: UITableViewCell {
     
     @IBOutlet var CatalogImgView: UIImageView!
     @IBOutlet var CatalogLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
        
