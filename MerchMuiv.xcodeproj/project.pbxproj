@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34D08C112864C746007CD402 /* WearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D08C102864C746007CD402 /* WearViewController.swift */; };
+		34D08C142864C8E0007CD402 /* WearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D08C122864C8E0007CD402 /* WearCell.swift */; };
+		34D08C152864C8E0007CD402 /* WearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D08C132864C8E0007CD402 /* WearCell.xib */; };
+		34D08C172864CE88007CD402 /* Wear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D08C162864CE88007CD402 /* Wear.swift */; };
 		34D88529282DD0960041CFD0 /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D88528282DD0960041CFD0 /* CatalogTableViewCell.swift */; };
 		34DAE95228259D7B00354B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95128259D7B00354B53 /* AppDelegate.swift */; };
 		34DAE95428259D7B00354B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAE95328259D7B00354B53 /* SceneDelegate.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34D08C102864C746007CD402 /* WearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearViewController.swift; sourceTree = "<group>"; };
+		34D08C122864C8E0007CD402 /* WearCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WearCell.swift; path = MerchMuiv/Controllers/WearCell.swift; sourceTree = SOURCE_ROOT; };
+		34D08C132864C8E0007CD402 /* WearCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WearCell.xib; path = MerchMuiv/Controllers/WearCell.xib; sourceTree = SOURCE_ROOT; };
+		34D08C162864CE88007CD402 /* Wear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wear.swift; sourceTree = "<group>"; };
 		34D88528282DD0960041CFD0 /* CatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewCell.swift; sourceTree = "<group>"; };
 		34DAE94E28259D7B00354B53 /* MerchMuiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerchMuiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DAE95128259D7B00354B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,7 @@
 		34E33D6B2825BB800043FF80 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				34D08C102864C746007CD402 /* WearViewController.swift */,
 				34DAE95528259D7B00354B53 /* SignInViewController.swift */,
 				34E33D6F2825EB820043FF80 /* AboutProjectViewController.swift */,
 				34D88528282DD0960041CFD0 /* CatalogTableViewCell.swift */,
@@ -114,6 +123,9 @@
 		34E33D73282699A50043FF80 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				34D08C122864C8E0007CD402 /* WearCell.swift */,
+				34D08C162864CE88007CD402 /* Wear.swift */,
+				34D08C132864C8E0007CD402 /* WearCell.xib */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +198,7 @@
 			files = (
 				34DAE95E28259D7D00354B53 /* LaunchScreen.storyboard in Resources */,
 				34E33D672825B5FD0043FF80 /* GoogleService-Info.plist in Resources */,
+				34D08C152864C8E0007CD402 /* WearCell.xib in Resources */,
 				34DAE95B28259D7D00354B53 /* Assets.xcassets in Resources */,
 				34DAE95928259D7B00354B53 /* Main.storyboard in Resources */,
 			);
@@ -198,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D08C142864C8E0007CD402 /* WearCell.swift in Sources */,
 				34E33D72282678070043FF80 /* CatalogViewController.swift in Sources */,
+				34D08C112864C746007CD402 /* WearViewController.swift in Sources */,
 				34E33D702825EB820043FF80 /* AboutProjectViewController.swift in Sources */,
 				34DAE95628259D7B00354B53 /* SignInViewController.swift in Sources */,
+				34D08C172864CE88007CD402 /* Wear.swift in Sources */,
 				34D88529282DD0960041CFD0 /* CatalogTableViewCell.swift in Sources */,
 				34DAE95228259D7B00354B53 /* AppDelegate.swift in Sources */,
 				34DAE95428259D7B00354B53 /* SceneDelegate.swift in Sources */,

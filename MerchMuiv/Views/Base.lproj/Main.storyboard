@@ -118,7 +118,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKw-f1-nIK">
-                                <rect key="frame" x="89" y="597" width="250" height="46.666666666666629"/>
+                                <rect key="frame" x="80" y="732.33333333333337" width="268" height="46.666666666666629"/>
                                 <color key="backgroundColor" red="0.98768121004104614" green="0.0" blue="0.039205938577651978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Оформить заказ">
@@ -135,9 +135,9 @@
                         <viewLayoutGuide key="safeArea" id="58S-3G-ucL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="58S-3G-ucL" firstAttribute="bottom" secondItem="XKw-f1-nIK" secondAttribute="bottom" constant="145.33333333333337" id="W2a-bC-Zif"/>
-                            <constraint firstItem="XKw-f1-nIK" firstAttribute="leading" secondItem="58S-3G-ucL" secondAttribute="leading" constant="89" id="uy8-sZ-gTr"/>
-                            <constraint firstItem="58S-3G-ucL" firstAttribute="trailing" secondItem="XKw-f1-nIK" secondAttribute="trailing" constant="89" id="wNd-eW-DDN"/>
+                            <constraint firstItem="58S-3G-ucL" firstAttribute="bottom" secondItem="XKw-f1-nIK" secondAttribute="bottom" constant="10" id="W2a-bC-Zif"/>
+                            <constraint firstItem="XKw-f1-nIK" firstAttribute="leading" secondItem="58S-3G-ucL" secondAttribute="leading" constant="80" id="uy8-sZ-gTr"/>
+                            <constraint firstItem="58S-3G-ucL" firstAttribute="trailing" secondItem="XKw-f1-nIK" secondAttribute="trailing" constant="80" id="wNd-eW-DDN"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Корзина" image="cart.fill" catalog="system" id="HCP-og-LiP"/>
@@ -155,8 +155,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AboutProject" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-8x-HbT">
-                                <rect key="frame" x="40" y="190" width="348" height="26.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="40" y="190" width="348" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -256,6 +256,7 @@
                                             <outlet property="CatalogImgView" destination="BqQ-pZ-dRX" id="PIW-cv-QIH"/>
                                             <outlet property="CatalogLbl" destination="7wV-eL-w6h" id="rtQ-cN-2zS"/>
                                             <outlet property="CatalogView" destination="YXO-aJ-ETR" id="HGF-X3-Ffa"/>
+                                            <segue destination="RAE-Vq-0lK" kind="show" id="VZQ-zq-6sN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -271,30 +272,27 @@
                             <constraint firstItem="5zd-TY-OtQ" firstAttribute="top" secondItem="OBR-yC-rsi" secondAttribute="top" id="ldb-Mh-FC9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Каталог" largeTitleDisplayMode="never" id="Yer-ji-sjS">
-                        <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.backward.fill" catalog="system" id="QRv-vv-Bu3"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Каталог" largeTitleDisplayMode="never" id="Yer-ji-sjS"/>
                     <connections>
                         <outlet property="CatalogTableView" destination="5zd-TY-OtQ" id="XsR-gG-0G1"/>
-                        <segue destination="RAE-Vq-0lK" kind="show" identifier="Show Products" id="XSN-6T-MVX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMT-Ea-K3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2284" y="-723"/>
         </scene>
-        <!--View Controller-->
+        <!--Wear View Controller-->
         <scene sceneID="Utf-0T-9Xj">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="RAE-Vq-0lK" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="RAE-Vq-0lK" customClass="WearViewController" customModule="MerchMuiv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="30v-8Z-3rP">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tnx-f3-0ji">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tnx-f3-0ji">
                                 <rect key="frame" x="0.0" y="56" width="428" height="787"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FIA-lm-Yko">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FIA-lm-Yko">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -322,6 +320,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D65-B1-M2I"/>
+                    <connections>
+                        <outlet property="collectionView" destination="tnx-f3-0ji" id="gxc-er-NDY"/>
+                        <segue destination="ke2-db-mTh" kind="show" id="NWQ-kN-ttF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dM-Oc-Sq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,9 +368,24 @@
             </objects>
             <point key="canvasLocation" x="1457.9439252336447" y="-723.11015118790499"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EDJ-7R-lLa">
+            <objects>
+                <viewController id="ke2-db-mTh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kee-Rz-qnE">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rln-6k-Voa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N5G-Hl-xbS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jfr-eS-TXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2725" y="-25"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="square.stack.3d.down.right.fill" catalog="system" width="124" height="128"/>
