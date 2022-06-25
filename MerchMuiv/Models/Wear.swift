@@ -13,7 +13,7 @@ struct Product {
     var price: Float
     var image: UIImage
 }
-// Структура товара
+// Структура товаров
 class Wear {
     var wears = [Product]()
     

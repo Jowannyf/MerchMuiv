@@ -53,7 +53,7 @@
                 <outlet property="PriceLabel" destination="VPQ-nD-WJm" id="0ya-Yu-9Wz"/>
                 <outlet property="wearImage" destination="KGV-f2-MWg" id="yOV-Tf-OsU"/>
             </connections>
-            <point key="canvasLocation" x="154" y="91"/>
+            <point key="canvasLocation" x="156" y="-80"/>
         </collectionViewCell>
     </objects>
 </document>
